@@ -1,0 +1,5 @@
+PROYECTO PROPIETARIO — SIN LICENCIA DE REUTILIZACIÓN
+
+Salvo autorización expresa del titular de los derechos, no se concede licencia para copiar, modificar, redistribuir o presentar como propio el código específico, diseño, documentación o contenido del proyecto Molino de Aliaga — Recorrido Virtual 360°.
+
+Esta declaración no altera ni restringe las licencias de componentes de terceros, incluidos Marzipano y sus dependencias.

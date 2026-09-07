@@ -1,0 +1,9 @@
+/* TEAM */
+Institución: Universidad de Lima
+Unidad: Laboratorio de Simulación de Proyectos
+Proyecto: Molino de Aliaga — Recorrido Virtual 360°
+Año: 2026
+
+/* TECHNOLOGY */
+Marzipano 0.10.2
+HTML5 / CSS3 / JavaScript

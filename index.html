@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Molino de Aliaga | Recorrido Virtual 360°</title><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  ><meta
+    name="description"
+    content="Recorrido virtual 360° del Molino de Aliaga, Centro Histórico de Lima."
+  ><meta name="theme-color" content="#171613"><meta name="author" content="Universidad de Lima - Laboratorio de Simulación de Proyectos"><meta name="color-scheme" content="dark"><link rel="preload" as="image" href="img/portada_molino_aliaga.avif" type="image/avif"><link rel="stylesheet" href="app.min.css"></head><body class="preload"><main
+    id="pano"
+    aria-label="Recorrido virtual 360 grados del Molino de Aliaga"
+  ></main><div
+    id="transitionVeil"
+    class="transition-veil"
+    aria-hidden="true"
+  ></div><section
+    id="splash"
+    class="splash"
+  ><div class="splash-photo"><picture class="splash-picture"><source srcset="img/portada_molino_aliaga.avif" type="image/avif"><img
+          src="img/portada_molino_aliaga.jpg"
+          alt="Contexto histórico y trabajos arqueológicos del Molino de Aliaga"
+          width="980"
+          height="662"
+          decoding="async"
+          fetchpriority="high"
+        ></picture><div class="splash-gradient"></div><div class="splash-vignette"></div></div><div class="splash-interface"><header class="splash-header"><div class="splash-brand"><div class="splash-logo"><img
+              src="img/logo-ulima-oficial.png"
+              alt="Universidad de Lima"
+            ></div><div class="splash-laboratory"><span>
+              Ingeniería Civil
+            </span><strong>
+              Laboratorio de Simulación de Proyectos
+            </strong></div></div></header><div class="splash-content"><span class="splash-eyebrow">
+          Patrimonio · Centro Histórico de Lima
+        </span><h1 class="splash-title">
+          Molino
+          <strong>
+            de Aliaga
+          </strong></h1><div class="splash-title-line"></div><p class="splash-tour-title">
+          Recorrido Virtual 360°
+        </p><p class="splash-location">
+          Alameda Chabuca Granda · Lima, Perú
+        </p><button
+          id="enterTour"
+          class="enter-button"
+          type="button"
+        ><span>
+            Iniciar recorrido
+          </span><svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          ><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg></button><div class="splash-metadata"><span id="splashSceneCount">
+            Recorrido patrimonial
+          </span><i></i><span>
+            Navegación interactiva
+          </span></div></div><footer class="splash-footer"><span>
+          Molino de Aliaga
+        </span><span>
+          Lima · Perú
+        </span></footer></div></section><div
+    id="uiShell"
+    class="ui-shell"
+  ><header
+      id="topbar"
+      class="topbar auto-hide"
+    ><div class="topbar-left"><button
+          id="menuButton"
+          class="ui-button"
+          type="button"
+          aria-label="Abrir menú del recorrido"
+        ><svg viewBox="0 0 24 24"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button><div class="project-name"><span>
+            Recorrido 360°
+          </span><strong>
+            Molino de Aliaga
+          </strong></div></div><div class="topbar-right"><button
+          id="mapButton"
+          class="map-button"
+          type="button"
+          aria-label="Abrir mapa didáctico"
+        ><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"></path><path d="M9 3v15"></path><path d="M15 6v15"></path></svg><span>
+            Mapa
+          </span></button><div class="ulima-signature"><div class="ulima-logo"><img
+              src="img/logo-ulima-oficial.png"
+              alt="Universidad de Lima"
+            ></div><div class="ulima-lab"><span>
+              Laboratorio de
+            </span><strong>
+              Simulación de Proyectos
+            </strong></div></div></div></header><section
+      id="sceneCard"
+      class="scene-card auto-hide"
+    ><div class="scene-counter"><strong id="sceneCurrent">
+          01
+        </strong><span></span><small id="sceneTotal">
+          01
+        </small></div><div class="scene-copy"><h2 id="sceneTitle">
+          Punto 01
+        </h2><p>
+          Molino de Aliaga
+        </p></div><button
+        id="historyButton"
+        class="history-button"
+        type="button"
+        hidden
+      ><i></i><span>
+          Historia
+        </span></button></section><nav
+      id="controls"
+      class="control-dock auto-hide"
+      aria-label="Controles del recorrido"
+    ><button
+        id="previousScene"
+        class="control-button"
+        type="button"
+        aria-label="Punto anterior"
+      ><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"></path></svg></button><button
+        id="nextScene"
+        class="control-button"
+        type="button"
+        aria-label="Punto siguiente"
+      ><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg></button><span class="control-separator"></span><button
+        id="autorotateButton"
+        class="control-button"
+        type="button"
+        aria-label="Rotación automática"
+      ><svg viewBox="0 0 24 24"><path d="M20 7v5h-5"></path><path d="M4 17v-5h5"></path><path d="M6.1 8a7 7 0 0111.3-2.1L20 8"></path><path d="M17.9 16A7 7 0 016.6 18.1L4 16"></path></svg></button><button
+        id="homeButton"
+        class="control-button"
+        type="button"
+        aria-label="Vista inicial"
+      ><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path></svg></button><button
+        id="zoomIn"
+        class="control-button"
+        type="button"
+        aria-label="Acercar"
+      ><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></button><button
+        id="zoomOut"
+        class="control-button"
+        type="button"
+        aria-label="Alejar"
+      ><svg viewBox="0 0 24 24"><path d="M5 12h14"></path></svg></button><button
+        id="fullscreenButton"
+        class="control-button"
+        type="button"
+        aria-label="Pantalla completa"
+      ><svg viewBox="0 0 24 24"><path d="M8 3H3v5"></path><path d="M16 3h5v5"></path><path d="M8 21H3v-5"></path><path d="M16 21h5v-5"></path></svg></button></nav><aside
+      id="sidePanel"
+      class="side-panel"
+      aria-hidden="true"
+    ><header class="panel-header"><div><span>
+            Molino de Aliaga
+          </span><h2>
+            Explorar recorrido
+          </h2></div><button
+          id="closeSidePanel"
+          class="close-button"
+          type="button"
+          aria-label="Cerrar menú"
+        ><svg viewBox="0 0 24 24"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></button></header><div class="panel-tabs"><button
+          id="menuTab"
+          class="panel-tab active"
+          type="button"
+        >
+          Recorrido
+        </button><button
+          id="mapTab"
+          class="panel-tab"
+          type="button"
+        >
+          Mapa didáctico
+        </button></div><div
+        id="menuView"
+        class="panel-view active"
+      ><div class="scene-search"><svg viewBox="0 0 24 24"><circle
+              cx="11"
+              cy="11"
+              r="6"
+            ></circle><path d="M16 16l4 4"></path></svg><input
+            id="sceneSearch"
+            type="search"
+            placeholder="Buscar punto"
+            autocomplete="off"
+          ></div><div class="scene-list-title"><span>
+            Puntos del recorrido
+          </span><strong id="sceneCountBadge">
+            0
+          </strong></div><div
+          id="sceneList"
+          class="scene-list"
+        ></div></div><div
+        id="mapView"
+        class="panel-view"
+      ><div class="map-header"><strong>
+            Mapa del recorrido
+          </strong><span>
+            Esquema referencial · no georreferenciado
+          </span></div><div class="map-container"><svg
+            id="routeMap"
+            viewBox="0 0 1000 520"
+            preserveAspectRatio="xMidYMid meet"
+            aria-label="Mapa didáctico del Molino de Aliaga"
+          ></svg></div><div class="map-legend"><div><i class="legend-current"></i><span>
+              Punto actual
+            </span></div><div><i class="legend-history"></i><span>
+              Información histórica
+            </span></div></div></div></aside><div
+      id="sidePanelBackdrop"
+      class="panel-backdrop"
+    ></div><section
+      id="historyPanel"
+      class="history-panel"
+      aria-hidden="true"
+    ><div class="history-top-line"></div><header class="history-header"><div><span>
+            Memoria del lugar
+          </span><h2 id="historyTitle">
+            Historia
+          </h2></div><button
+          id="closeHistory"
+          class="close-button"
+          type="button"
+          aria-label="Cerrar información histórica"
+        ><svg viewBox="0 0 24 24"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></button></header><p
+        id="historyText"
+        class="history-text"
+      ></p><footer class="history-source">
+        Municipalidad Metropolitana de Lima · PROLIMA
+      </footer></section><div
+      id="historyBackdrop"
+      class="history-backdrop"
+    ></div></div><script src="vendor/marzipano.js"></script><script src="data.js"></script><script src="app.min.js"></script></body></html>

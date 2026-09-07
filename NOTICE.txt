@@ -1,0 +1,10 @@
+MOLINO DE ALIAGA — RECORRIDO VIRTUAL 360°
+
+Universidad de Lima
+Laboratorio de Simulación de Proyectos
+
+© 2026. Todos los derechos reservados respecto del desarrollo propio, sujeto a la titularidad institucional que corresponda.
+
+El diseño de interfaz, documentación, estructura del recorrido y desarrollos específicos de este proyecto no se ofrecen bajo una licencia de software libre. Su publicación web no implica autorización para atribuirse su autoría, redistribuirlos o reutilizarlos fuera de los permisos legalmente aplicables.
+
+Las bibliotecas de terceros conservan sus propias licencias. Consulte THIRD_PARTY_NOTICES.md.
